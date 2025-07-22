@@ -65,7 +65,7 @@ jobs:
           echo "BASE_VERSION=$(echo ${GRID_VERSION})" >> $GITHUB_ENV
           echo "BASE_RELEASE=nightly" >> $GITHUB_ENV
       - name: Update tag nightly
-        uses: richardsimko/update-tag@v1.0.11
+        uses: richardsimko/update-tag@v1.1.6
         with:
           tag_name: ${{ env.BASE_RELEASE }}
         env:
